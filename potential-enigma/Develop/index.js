@@ -73,7 +73,7 @@ function init() {
         .then(function(data) {
             console.log(data);
             const generatedMD = generateMarkDownPackage(data);
-            const fileName = './sample/README.md';
+            const fileName = 'README.md';
 
             writeToFile(fileName, generatedMD);
         });
